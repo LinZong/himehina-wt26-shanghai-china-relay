@@ -105,14 +105,14 @@ a {
   justify-content: center;
   gap: 8px 18px;
   margin: 0;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.55;
   letter-spacing: .035em;
 }
 
 .unofficial-banner strong {
   color: #ffd0ec;
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: .09em;
   text-shadow: 0 0 12px rgba(255,82,209,.42);
 }
@@ -121,10 +121,22 @@ a {
   color: rgba(255,255,255,.65);
 }
 
+.unofficial-banner a {
+  color: #ffc7ea;
+  font-size: 14px;
+  font-weight: 700;
+  text-underline-offset: 3px;
+  transition: color .2s ease;
+}
+
+.unofficial-banner a:hover {
+  color: #fff;
+}
+
 .unofficial-banner-mark {
   flex: 0 0 auto;
   color: var(--pink);
-  font-size: 13px;
+  font-size: 16px;
   opacity: .78;
   animation: twinkle 2.8s ease-in-out infinite;
 }
@@ -715,7 +727,7 @@ a {
 .fan-credit {
   margin: 36px 0 0;
   color: rgba(255,255,255,.32);
-  font: 600 18px/1.5 "Fredoka", sans-serif;
+  font: 600 18spx/1.5 "Fredoka", sans-serif;
   letter-spacing: .16em;
   text-transform: uppercase;
 }
@@ -773,11 +785,11 @@ a {
 
 @media (max-width: 680px) {
   .site-shell {
-    padding-top: 62px;
+    padding-top: 76px;
   }
 
   .unofficial-banner {
-    min-height: 62px;
+    min-height: 76px;
     gap: 9px;
     padding: 9px 12px;
   }
@@ -797,6 +809,10 @@ a {
     width: 100%;
     font-size: 12px;
     text-align: center;
+  }
+
+  .unofficial-banner a {
+    font-size: 10px;
   }
 
   .unofficial-banner-mark {

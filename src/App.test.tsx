@@ -13,6 +13,10 @@ describe('HIMEHINA Shanghai relay page', () => {
 
     expect(screen.getByLabelText('活动性质说明')).toHaveTextContent('非官方民间观影活动')
     expect(screen.getByLabelText('活动性质说明')).toHaveTextContent('与 Studio LaRa 及 HIMEHINA 官方无隶属或主办关系')
+    expect(screen.getByLabelText('活动性质说明').querySelector('a')).toHaveAttribute(
+      'href',
+      'https://spc.himehina.jp/world-tour26',
+    )
     expect(screen.getByRole('heading', { name: 'TOUR DATES' })).toBeInTheDocument()
     expect(screen.queryByRole('heading', { name: 'TICKETS' })).not.toBeInTheDocument()
     expect(screen.getByText('中国上海')).toBeInTheDocument()

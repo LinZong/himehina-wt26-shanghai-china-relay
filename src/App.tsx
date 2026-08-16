@@ -163,6 +163,9 @@ export default function App() {
         <p>
           <strong>非官方民间观影活动</strong>
           <span>本活动由民间组织举办，与 Studio LaRa 及 HIMEHINA 官方无隶属或主办关系，敬请留意。</span>
+          <a href="https://spc.himehina.jp/world-tour26" target="_blank" rel="noreferrer">
+            前往 HIMEHINA WORLD Tour 2026 官方网站
+          </a>
         </p>
         <span className="unofficial-banner-mark" aria-hidden="true">✦</span>
       </aside>
