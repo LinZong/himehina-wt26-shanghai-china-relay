@@ -23,7 +23,7 @@ describe('HIMEHINA Shanghai relay page', () => {
     const { container } = renderApp()
 
     expect(screen.getByRole('heading', { name: 'ウタミタ祭 · ご挨拶' })).toBeInTheDocument()
-    expect(screen.getByRole('note')).toHaveTextContent('此音频中的声音由 AI 合成。')
+    expect(screen.getByRole('note')).toHaveTextContent(/此音频中的声音由 AI 合成/)
     const audio = container.querySelector('audio')
     expect(audio).toHaveAttribute('src', '/audio/utamita-sai.wav')
     expect(audio).toHaveAttribute('controls')

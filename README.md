@@ -28,7 +28,7 @@ npm run preview
 - Build output directory：`dist`
 - Node.js version：`22`
 
-项目是纯静态单页，无需 Functions 或环境变量。`public/_redirects` 会将前端路由回退到根 `index.html`，支持直接访问或刷新 `/greet/utamita-sai`。
+项目是纯静态单页，无需 Functions 或环境变量。`wrangler.jsonc` 将静态资源目录设为 `dist`，并通过 `assets.not_found_handling` 的 `single-page-application` 模式将前端路由回退到根 `index.html`，支持直接访问或刷新 `/greet/utamita-sai`。
 
 ## 说明
 
