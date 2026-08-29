@@ -28,13 +28,7 @@ npm run preview
 - Build output directory：`dist`
 - Node.js version：`22`
 
-项目是纯静态单页，无需 Functions、环境变量或额外重写规则。
-
-## GitHub Pages
-
-仓库已包含 `.github/workflows/deploy-pages.yml`。在仓库 Settings → Pages 中将 Source 设为 GitHub Actions；推送到 `main` 后会自动测试、构建并部署。
-
-Vite 使用相对资源基址，因此支持 `https://username.github.io/repository-name/` 形式的仓库子路径。
+项目是纯静态单页，无需 Functions 或环境变量。`public/_redirects` 会将前端路由回退到根 `index.html`，支持直接访问或刷新 `/greet/utamita-sai`。
 
 ## 说明
 

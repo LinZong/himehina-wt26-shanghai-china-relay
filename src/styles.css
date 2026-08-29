@@ -46,6 +46,127 @@ a {
   outline-offset: 4px;
 }
 
+.greeting-page {
+  position: relative;
+  display: grid;
+  min-height: 100vh;
+  min-height: 100svh;
+  padding: 32px 20px;
+  overflow: hidden;
+  place-items: center;
+  background:
+    radial-gradient(circle at 50% 12%, rgba(255, 137, 218, .22), transparent 32%),
+    linear-gradient(145deg, #07091f, #190929 55%, #080d2d);
+}
+
+.greeting-glow {
+  position: absolute;
+  width: min(55vw, 580px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: .24;
+  pointer-events: none;
+}
+
+.greeting-glow-one {
+  top: -28%;
+  left: -14%;
+  background: #ff3fc8;
+}
+
+.greeting-glow-two {
+  right: -18%;
+  bottom: -32%;
+  background: #586cff;
+}
+
+.greeting-card {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: min(560px, 100%);
+  align-items: center;
+  padding: clamp(38px, 7vw, 72px) clamp(24px, 7vw, 64px);
+  flex-direction: column;
+  text-align: center;
+  background: linear-gradient(145deg, rgba(255,255,255,.11), rgba(255,255,255,.035));
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 28px;
+  box-shadow: 0 28px 90px rgba(0,0,0,.35), inset 0 1px rgba(255,255,255,.1);
+  backdrop-filter: blur(20px);
+}
+
+.greeting-kicker {
+  color: #ff9dde;
+  font: 700 12px/1.5 "Fredoka", sans-serif;
+  letter-spacing: .22em;
+}
+
+.greeting-note {
+  display: grid;
+  width: 66px;
+  height: 66px;
+  margin: 28px 0 18px;
+  place-items: center;
+  color: #fff;
+  font-size: 30px;
+  background: linear-gradient(135deg, #ff52d1, #a16eff);
+  border-radius: 50%;
+  box-shadow: 0 0 34px rgba(255,82,209,.45);
+}
+
+.greeting-card h1 {
+  margin: 0;
+  color: transparent;
+  font-size: clamp(42px, 10vw, 66px);
+  line-height: 1.15;
+  letter-spacing: .08em;
+  background: linear-gradient(130deg, #fff, #ffc8ea 55%, #c8bbff);
+  background-clip: text;
+  filter: drop-shadow(0 5px 20px rgba(255,82,209,.25));
+}
+
+.greeting-card p {
+  margin: 18px 0 30px;
+  color: rgba(255,255,255,.7);
+  line-height: 1.8;
+}
+
+.greeting-audio {
+  width: 100%;
+  color-scheme: dark;
+}
+
+.greeting-card .ai-voice-notice {
+  margin: 18px 0 0;
+  padding: 6px 12px;
+  color: rgba(255,255,255,.72);
+  font-size: 12px;
+  line-height: 1.5;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 999px;
+}
+
+.greeting-card small {
+  margin-top: 16px;
+  color: rgba(255,255,255,.45);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.greeting-back {
+  margin-top: 30px;
+  color: #ffc2e8;
+  font-size: 14px;
+  text-underline-offset: 4px;
+}
+
+.greeting-back:hover {
+  color: #fff;
+}
+
 .site-shell {
   position: relative;
   min-height: 100vh;
